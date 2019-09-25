@@ -78,10 +78,10 @@ Next, we satisfy the superclass constraints
 
 ```haskell
 instance Read Opaque where
-  readsPrec = undefined
+  readsPrec _ _ = []
 
 instance Show Opaque where
-  showsPrec = undefined
+  showsPrec _ = \case {}
 ```
 
 Note that these two instances only exist so that the constraint is
